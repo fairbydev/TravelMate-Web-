@@ -1,0 +1,19 @@
+<html><body><h1>It works!</h1>
+
+<?php
+
+	$host = "localhost";
+	$user = "root";
+	$password = "MyNewPassword";
+	$dbname = "test";
+		
+	$conn = new mysqli($host, $user, $password, $dbname);
+	
+
+	$sql = "insert into test (test) values ('1111')";
+	
+	$conn->query($sql);
+
+?>
+
+</body></html>
